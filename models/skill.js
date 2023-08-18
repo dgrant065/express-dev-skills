@@ -5,9 +5,14 @@ const skills = [
 ];
 
 module.exports = {
-    getAll, getOne, create,
+    getAll, getOne, create, update
 
 };
+
+function update(id, updatedSkill) {
+    id = parseInt(id);
+    const skill = skills.find()
+}
 
 function create(skill) {
     skill.id = Date.now() % 100000;

@@ -7,7 +7,8 @@ const skillsCtrl = require('../controller/skills');
 router.get('/', skillsCtrl.index);
 router.get('/:id', skillsCtrl.show);
 router.get('/new', skillsCtrl.new);
-// router.post('/', skillsCtrl.create);
+router.post('/', skillsCtrl.create);
+router.get('/:id/edit', skillsCtrl.edit)
 
 
 
